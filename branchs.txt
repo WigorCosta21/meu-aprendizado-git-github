@@ -1,0 +1,15 @@
+Git branch
+Branches (algo como ramificações, em português) são altamente importantes no mundo do git. Usando as branches, vários desenvolvedores conseguem trabalhar em paralelo no mesmo projeto simultaneamente. Podemos usar o comando git branch para criar, listar e excluir as branches.
+
+Como criar uma branch:
+
+git branch <nome-da-branch>
+Esse comando criará uma branch em seu local de trabalho. Para fazer o push (algo como enviar) da nova branch para o repositório remoto, você precisa usar o comando a seguir:
+
+git push -u <local-remoto> <nome-da-branch>
+Como ver as branches:
+
+git branch ou git branch --list
+Como excluir uma branch:
+
+git branch -d <nome-da-branch>
