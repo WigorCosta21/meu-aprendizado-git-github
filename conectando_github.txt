@@ -1,0 +1,38 @@
+Configurar o cliente GIT, para vincular os commits ao nome correto ( Autor dos commits)
+
+git config --global user.name "SEU NOME AQUI"
+git config --global user.email email@gmail.com
+Para inicializar o repositório GIT vazio existe duas formas.
+
+[1] Executando o comando abaixo, que o git vai criar a pasta, caso ela não existir e inicializará como repositório GIT. Ex:
+
+~$ git init name_project
+[2] Criar a pasta e depois entrar na pasta e depois inicializar o repositório, ficaria assim:
+
+~$ mkdir name_project
+~$ cd name_project
+~$ git init
+Entre em seu repositório e crie o arquivo README
+
+~$ cd name_project/
+~$ vim README
+Escreva um texto inicial, como por exemplo “First commit” e salve o arquivo (:wq)
+
+~$ git status
+Aparecerá a os dados conforme imagem abaixo, mas o que isso quer dizer? Bom, a parte importante dessa tela é Untracked files que mostra os arquivos que o GIT ainda não está gerenciando, ou seja, o GIT não sabe o que fazer com ele e não registra nenhuma modificação no arquivo.
+
+depois basta adicionar e comitar o arquivo:
+
+~$ git add README
+~$ git commit -m "Adicionando arquivo README"
+Próximo passo é subir para o repositório com:
+
+~$ git push
+Se queres baixar em um servidor ou em outro computador use o comando:
+
+~$ git clone [url]
+(essa url é dada no diretório que foi criado)
+
+Depois de clonar para baixar atualizações use:
+
+~$ git pull
